@@ -130,14 +130,28 @@ A los participantes de una convención se les ofrecen seis recorridos, cada uno 
 # Permutación: n!/(n-k)!
 ```
 
-### Ejercicio 2.23 ###
+### Ejercicio 2.22 ###
 
-Si un experimento consiste en lanzar un dado y después extraer una letra al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio muestral?:
+En un estudio médico los pacientes se clasifican en 8 formas de acuerdo con su tipo sanguíneo: AB+, AB–, A+, A–, B+, B–, O+ u O–; y también de acuerdo con su presión sanguínea: baja, normal o alta. Encuentre el número de formas en las que se puede clasificar a un paciente. 
 
-```{r 23, exercise=TRUE}
- 156
+```{r 22, exercise=TRUE}
+ 
+```
+```{r 22-hint}
+8*3
 ```
 
+
+### Ejercicio 2.23 ###
+
+Si un experimento consiste en lanzar un dado y después extraer una letra al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio muestral?
+
+```{r 23, exercise=TRUE}
+ 
+```
+```{r 23-hint}
+6*26
+```
  
 
 
