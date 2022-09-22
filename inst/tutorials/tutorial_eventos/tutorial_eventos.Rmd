@@ -1,0 +1,141 @@
+---
+title: "Conceptos básicos de probabilidad: espacio muestral y eventos"
+author: Departamento de matemáticas </br> Pontificia Unversidad Javeriana </br> Sede Cali
+output: 
+  learnr::tutorial:
+    css: css/learnr_metadocencia.css
+    progressive: false
+    language:
+      es: tutorial_es.json
+description: "Conceptos básicos de probabilidad: espacio muestral y eventos" 
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE,
+                 exercise.warn_invisible = FALSE)
+```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("images/tutorial_encabezado.jpg")
+```
+
+
+## Ejercicio 2.14 ##
+
+Si S = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} y A = {0, 2, 4, 6, 8}, B = {1, 3, 5, 7, 9}, C = {2, 3, 4, 5} y D = {1, 6, 7}, liste los elementos de los conjuntos que corresponden a los siguientes eventos:
+
+
+```{r 14}
+quiz(
+  question("A union B",
+    answer("{0,1,2,3,4,5,6,7,8,9}", correct = TRUE),
+    answer("{0,3,4,5,6,7,8}"),
+    answer("{2,3,5,7,8,9}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A inter B",
+    answer("{0,3,4,5,6,7,8}"),
+    answer("{1,2,7,8}"),
+    answer("{∅}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("C compl",
+    answer("{2,4,6}"),
+    answer("{0,1,6,7,9}"),
+    answer("{0,1,6,7,8,9}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("(C comp inter D) union B",
+    answer("{1,3,5,6,7,9}", correct = TRUE),
+    answer("{∅}"),
+    answer("{3,5,6,7,8}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("(S inter C) comp",
+    answer("{0,3}"),
+    answer("{0,2,4,9}"),
+    answer("{1,6,7,8,9}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A inter C inter D comp",
+    answer("{4,5,6}"),
+    answer("{2,4}", correct = TRUE ),
+    answer("{3,5,6,7,8}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo")
+)
+```
+
+## Ejercicio 2.15 ##
+
+Considere el espacio muestral S = {cobre, sodio, nitrógeno, potasio, uranio, oxígeno, cinc} y los eventos: <br>
+* A = {cobre, sodio, cinc} <br>
+* B = {sodio, nitrógeno, potasio} <br>
+* C = {oxígeno}
+
+```{r 15}
+quiz(
+  question("A",
+    answer("{sodio}"),
+    answer("{nitrogeno, potasio, uranio, oxigeno}", correct = TRUE),
+    answer("{potasio, uranio, oxigeno}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("B",
+    answer("{sodio, cobre, cinc, potasio}"),
+    answer("{∅}"),
+    answer("{cobre, sodio, nitrogeno, potasio, cinc}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("E",
+    answer("{∅}", correct = TRUE),
+    answer("{uranio}"),
+    answer("{oxigeno, cinc, cobre, sodio}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("F",
+    answer("{oxigeno}", correct = TRUE),
+    answer("{potasio}"),
+    answer("Ninguna de las anteriores"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo")
+)
+```
+## Ejercicio 2.18 ##
+
+```{r 18}
+quiz(
+  question("¿Cuál de los siguientes pares de eventos son mutuamente excluyentes?",
+    answer("Un golfista que se clasifica en último lugar en la vuelta del hoyo 18, en un torneo de 72 hoyos, y pierde el torneo."),
+    answer("Un jugador de póquer que tiene flor (todas las cartas del mismo palo) y 3 del mismo palo en la misma mano de 5 cartas."),
+    answer("Una madre que da a luz a una niña y a un par de gemelas el mismo día."),
+    answer("Un jugador de ajedrez que pierde el último juego y gana el torneo.", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo")
+)
+```
+
+## Ejercicio 2.21 ##
+
+### Conteo de puntos muestrales ###
+
+A los participantes de una convención se les ofrecen seis recorridos, cada uno de tres días, a sitios de interés. ¿De cuántas maneras se puede acomodar una persona para que vaya a uno de los recorridos planeados por la convención?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
