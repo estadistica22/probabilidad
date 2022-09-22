@@ -138,7 +138,7 @@ Si un experimento consiste en lanzar un dado y después extraer una letra al aza
  156
 ```
 
-
+ 
 
 
 
