@@ -132,7 +132,7 @@ A los participantes de una convención se les ofrecen seis recorridos, cada uno 
 
 ### Ejercicio 2.23 ###
 
-Si un experimento consiste en lanzar un dado y después extraer una letra al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio muestral?
+Si un experimento consiste en lanzar un dado y después extraer una letra al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio muestral?:
 
 ```{r 23, exercise=TRUE}
  156
