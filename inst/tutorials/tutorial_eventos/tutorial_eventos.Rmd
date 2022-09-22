@@ -124,7 +124,7 @@ quiz(
 A los participantes de una convención se les ofrecen seis recorridos, cada uno de tres días, a sitios de interés. ¿De cuántas maneras se puede acomodar una persona para que vaya a uno de los recorridos planeados por la convención?
 
 ```{r e21, exercise=TRUE}
-
+ 
 ```
 ```{r e21-hint}
 Permutación: n!/(n-k)!
