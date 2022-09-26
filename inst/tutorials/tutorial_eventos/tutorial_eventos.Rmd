@@ -181,14 +181,13 @@ c) ¿De cuántas maneras se pueden formar si, de las 6, 2 personas específi cas
 
 Basado en su experiencia, un agente bursátil considera que en las condiciones económicas actuales la probabilidad de que un cliente invierta en bonos libres de impuestos es 0.6, la de que invierta en fondos comunes de inversión es 0.3 y la de que invierta en ambos es 0.15. En esta ocasión encuentre la probabilidad de que un cliente invierta
 
-a) en bonos libres de impuestos o en fondos comunes
-de inversión;
+a) en bonos libres de impuestos o en fondos comunes de inversión;
  
 b) en ninguno de esos dos instrumentos
 
 ### Ejercicio 2.55 ###
 
-Si cada artículo codifi cado en un catálogo empieza con 3 letras distintas seguidas por 4 dígitos distintos de cero, calcule la probabilidad de seleccionar aleatoriamente uno de estos artículos codifi cados que tenga como primera letra una vocal y el último dígito sea par.
+Si cada artículo codificado en un catálogo empieza con 3 letras distintas seguidas por 4 dígitos distintos de cero, calcule la probabilidad de seleccionar aleatoriamente uno de estos artículos codificados que tenga como primera letra una vocal y el último dígito sea par.
 
 ### Ejercicio 2.57 ###
 
@@ -228,11 +227,9 @@ A continuación se listan los porcentajes, proporcionados por Consumer Digest (j
       Oficina o estudio: 0.40
       Otra habitación: 0.28
      
-a) ¿Cuál es la probabilidad de que una PC esté en un
-dormitorio?
+a) ¿Cuál es la probabilidad de que una PC esté en un dormitorio?
 b) ¿Cuál es la probabilidad de que no esté en un dormitorio?
-c) Suponga que de entre las casas que tienen una PC
-se selecciona una al azar,
+c) Suponga que de entre las casas que tienen una PC se selecciona una al azar,
 
 ### Ejercicio 2.64 ###
 
@@ -245,23 +242,55 @@ Existe interés por la vida de un componente electrónico. Suponga que se sabe q
 
 ### Ejercicio 2.74 ###
 
+Un grupo de estudiantes de física avanzada se compone de 10 alumnos de primer año, 30 del último
+año y 10 graduados. Las calificaciones finales muestran que 3 estudiantes de primer año, 10 del último año y 5 de los graduados obtuvieron 10 en el curso. Si se elige un estudiante al azar de este grupo y se descubre que es uno de los que obtuvieron 10 de calificación, ¿cuál es la probabilidad de que sea un estudiante de último año?
+
 ### Ejercicio 2.75 ###
+
+La siguiente es una clasificación, según el género y el nivel de escolaridad, de una muestra aleatoria de 200 adultos.
+   Escolaridad   Hombre Mujer
+   Primaria      38     45
+   Secundaria    28     50
+   Universidad   22     17
+   
+Si se elige una persona al azar de este grupo, ¿cuál es la probabilidad de que… 
+
+a) la persona sea hombre, dado que su escolaridad es de secundaria?;
+b) la persona no tenga un grado universitario, dado que es mujer?
 
 ### Ejercicio 2.78 ###
 
+Un fabricante de una vacuna para la gripe está interesado en determinar la calidad de su suero. Con
+ese fi n tres departamentos diferentes procesan los lotes de suero y tienen tasas de rechazo de 0.10, 0.08 y 0.12, respectivamente. Las inspecciones de los tres departamentos son secuenciales e independientes.
+
+a) ¿Cuál es la probabilidad de que un lote de suero sobreviva a la primera inspección departamental pero sea rechazado por el segundo departamento?
+
+b) ¿Cuál es la probabilidad de que un lote de suero sea rechazado por el tercer departamento?
+
 ### Ejercicio 2.80 ###
+
+La probabilidad de que cuando se tenga que llenar el tanque de gasolina de un automóvil también se necesite cambiarle el aceite es 0.25, la probabilidad de que también se le tenga que cambiar el filtro de aceite es 0.40, y la probabilidad de que se necesite cambiarle el aceite y el filtro es 0.14.
+
+a) Si se le tiene que cambiar el aceite, ¿cuál es la probabilidad de que también se necesite cambiarle el filtro?
+
+b) Si se le tiene que cambiar el fi ltro de aceite, ¿cuál es la probabilidad de que también se le tenga que cambiar el aceite? 
 
 ### Ejercicio 2.81 ###
 
-### Ejercicio 2.88 ###
+La probabilidad de que un hombre casado vea cierto programa de televisión es 0.4 y la probabilidad de que lo vea una mujer casada es 0.5. La probabilidad de que un hombre vea el programa, dado que su esposa lo ve, es 0.7. Calcule la probabilidad de que
 
-### Ejercicio 2.90 ###
+a) una pareja casada vea el programa;
+b) una esposa vea el programa dado que su esposo lo ve;
+c) al menos uno de los miembros de la pareja casada
+vea el programa. 
 
 ### Ejercicio 2.95 ###
 
+En cierta región del país se sabe por experiencia que la probabilidad de seleccionar un adulto mayor de 40 años de edad con cáncer es 0.05. Si la probabilidad de que un doctor diagnostique de forma correcta que una persona con cáncer tiene la enfermedad es 0.78, y la probabilidad de que diagnostique de forma incorrecta que una persona sin cáncer tiene la enfermedad es 0.06, ¿cuál es la probabilidad de que a un adulto mayor de 40 años se le diagnostique cáncer? 
+
 ### Ejercicio 2.96 ###
 
-
+La policía planea hacer respetar los límites de velocidad usando un sistema de radar en 4 diferentes puntos a las orillas de la ciudad. Las trampas de radar en cada uno de los sitios L1, L2, L3 y L4 operarán 40%, 30 %, 20% y 30% del tiempo. Si una persona que excede el límite de velocidad cuando va a su trabajo tiene probabilidades de 0.2, 0.1, 0.5 y 0.2, respectivamente, de pasar por esos lugares, ¿cuál es la probabilidad de que reciba una multa por conducir con exceso de velocidad? 
 
 
 
