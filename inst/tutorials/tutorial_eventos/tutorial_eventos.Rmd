@@ -30,37 +30,37 @@ Si S = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} y A = {0, 2, 4, 6, 8}, B = {1, 3, 5, 7, 9}
 
 ```{r 14}
 quiz(
-  question("A union B",
+  question("A ∪ B",
     answer("{0,1,2,3,4,5,6,7,8,9}", correct = TRUE),
     answer("{0,3,4,5,6,7,8}"),
     answer("{2,3,5,7,8,9}"),
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
-  question("A inter B",
+  question("A ∩ B",
     answer("{0,3,4,5,6,7,8}"),
     answer("{1,2,7,8}"),
     answer("{∅}", correct = TRUE),
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
-  question("C compl",
+  question("C'",
     answer("{2,4,6}"),
     answer("{0,1,6,7,9}"),
     answer("{0,1,6,7,8,9}", correct = TRUE),
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
-  question("(C comp inter D) union B",
+  question("(C' ∩ D) union B",
     answer("{1,3,5,6,7,9}", correct = TRUE),
     answer("{∅}"),
     answer("{3,5,6,7,8}"),
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
-  question("(S inter C) comp",
+  question("(S ∩ C)'",
     answer("{0,3}"),
     answer("{0,2,4,9}"),
     answer("{1,6,7,8,9}", correct = TRUE),
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
-  question("A inter C inter D comp",
+  question("A ∩ C ∩ D'",
     answer("{4,5,6}"),
     answer("{2,4}", correct = TRUE ),
     answer("{3,5,6,7,8}"),
@@ -141,7 +141,6 @@ En un estudio médico los pacientes se clasifican en 8 formas de acuerdo con su 
 8*3
 ```
 
-
 ### Ejercicio 2.23 ###
 
 Si un experimento consiste en lanzar un dado y después extraer una letra al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio muestral?
@@ -153,6 +152,118 @@ Si un experimento consiste en lanzar un dado y después extraer una letra al aza
 6*26
 ```
  
+### Ejercicio 2.25 ###
+
+Cierta marca de calzado existe en 5 diferentes estilos y cada estilo está disponible en 4 colores distintos. Si la tienda deseara mostrar la cantidad de pares de zapatos que incluya todos los diversos estilos y colores, ¿cuántos pares diferentes tendría que mostrar?
+
+### Ejercicio 2.30 ###
+
+¿De cuántas formas distintas se puede responder una prueba de falso-verdadero que consta de 9 preguntas?
+
+### Ejercicio 2.32 ###
+
+a) ¿De cuántas maneras se pueden formar 6 personas para abordar un autobús?
+b) ¿Cuántas maneras son posibles si, de las 6, 3 personas específi cas insisten en formarse una después de la otra?
+c) ¿De cuántas maneras se pueden formar si, de las 6, 2 personas específi cas se rehúsan a formarse una detrás de la otra?
+
+### Ejercicio 2.37 ###
+
+¿De cuántas maneras se pueden sentar 4 niños y 5 niñas en una fi la, si se deben alternar unos y otras?
+
+### Ejercicio 2.45 ###
+
+¿Cuántas permutaciones distintas se pueden hacer con las letras de la palabra INFINITO?
+
+
+## Probabilidades simples y conjuntas ##
+
+### Ejercicio 2.54 ###
+
+Basado en su experiencia, un agente bursátil considera que en las condiciones económicas actuales la probabilidad de que un cliente invierta en bonos libres de impuestos es 0.6, la de que invierta en fondos comunes de inversión es 0.3 y la de que invierta en ambos es 0.15. En esta ocasión encuentre la probabilidad de que un cliente invierta
+
+a) en bonos libres de impuestos o en fondos comunes
+de inversión;
+ 
+b) en ninguno de esos dos instrumentos
+
+### Ejercicio 2.55 ###
+
+Si cada artículo codifi cado en un catálogo empieza con 3 letras distintas seguidas por 4 dígitos distintos de cero, calcule la probabilidad de seleccionar aleatoriamente uno de estos artículos codifi cados que tenga como primera letra una vocal y el último dígito sea par.
+
+### Ejercicio 2.57 ###
+
+Si se elige al azar una letra del alfabeto inglés, encuentre la probabilidad de que la letra
+
+ a) sea una vocal excepto y;
+ b) esté listada en algún lugar antes de la letra j;
+ c) esté listada en algún lugar después de la letra g. 
+
+### Ejercicio 2.58 ###
+
+Se lanza un par de dados. Calcule la probabilidad de obtener
+ a) un total de 8;
+ b) máximo un total de 5.
+
+### Ejercicio 2.60 ###
+
+Si se toman 3 libros al azar, de un librero que contiene 5 novelas, 3 libros de poemas y 1 diccionario, ¿cuál es la probabilidad de que…
+
+ a) se seleccione el diccionario?
+ b) se seleccionen 2 novelas y 1 libro de poemas?
+
+### Ejercicio 2.61 ###
+
+En un grupo de 100 estudiantes graduados de preparatoria, 54 estudiaron matemáticas, 69 estudiaron historia y 35 cursaron matemáticas e historia. Si se selecciona al azar uno de estos estudiantes, calcule la probabilidad de que
+
+ a) el estudiante haya cursado matemáticas o historia;
+ b) el estudiante no haya llevado ninguna de estas materias;
+ c) el estudiante haya cursado historia pero no matemáticas.
+
+### Ejercicio 2.63 ###
+
+A continuación se listan los porcentajes, proporcionados por Consumer Digest (julio/agosto de 1996), de las probables ubicaciones de las PC en una casa:
+      Dormitorio de adultos: 0.03
+      Dormitorio de niños: 0.15
+      Otro dormitorio: 0.14
+      Oficina o estudio: 0.40
+      Otra habitación: 0.28
+     
+a) ¿Cuál es la probabilidad de que una PC esté en un
+dormitorio?
+b) ¿Cuál es la probabilidad de que no esté en un dormitorio?
+c) Suponga que de entre las casas que tienen una PC
+se selecciona una al azar,
+
+### Ejercicio 2.64 ###
+
+Existe interés por la vida de un componente electrónico. Suponga que se sabe que la probabilidad de que el componente funcione más de 6000 horas es 0.42. Suponga, además, que la probabilidad de que el componente no dure más de 4000 horas es 0.04.
+
+ a) ¿Cuál es la probabilidad de que la vida del componente sea menor o igual a 6000 horas?
+ b) ¿Cuál es la probabilidad de que la vida del componente sea mayor que 4000 horas?
+
+## Probabilidad condicional, independencia y regla del producto ##
+
+### Ejercicio 2.74 ###
+
+### Ejercicio 2.75 ###
+
+### Ejercicio 2.78 ###
+
+### Ejercicio 2.80 ###
+
+### Ejercicio 2.81 ###
+
+### Ejercicio 2.88 ###
+
+### Ejercicio 2.90 ###
+
+### Ejercicio 2.95 ###
+
+### Ejercicio 2.96 ###
+
+
+
+
 
 
 
