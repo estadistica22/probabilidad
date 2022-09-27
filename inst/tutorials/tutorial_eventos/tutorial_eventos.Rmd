@@ -156,24 +156,74 @@ Si un experimento consiste en lanzar un dado y después extraer una letra al aza
 
 Cierta marca de calzado existe en 5 diferentes estilos y cada estilo está disponible en 4 colores distintos. Si la tienda deseara mostrar la cantidad de pares de zapatos que incluya todos los diversos estilos y colores, ¿cuántos pares diferentes tendría que mostrar?
 
+```{r 25, exercise=TRUE}
+ 
+```
+```{r 25-hint}
+
+```
+
 ### Ejercicio 2.30 ###
 
 ¿De cuántas formas distintas se puede responder una prueba de falso-verdadero que consta de 9 preguntas?
 
+```{r 30, exercise=TRUE}
+ 
+```
+```{r 30-hint}
+
+```
+
+
 ### Ejercicio 2.32 ###
 
 a) ¿De cuántas maneras se pueden formar 6 personas para abordar un autobús?
+
+```{r 32a, exercise=TRUE}
+ 
+```
+```{r 32a-hint}
+
+```
+
 b) ¿Cuántas maneras son posibles si, de las 6, 3 personas específi cas insisten en formarse una después de la otra?
+
+```{r 32b, exercise=TRUE}
+ 
+```
+```{r 32b-hint}
+
+```
 c) ¿De cuántas maneras se pueden formar si, de las 6, 2 personas específi cas se rehúsan a formarse una detrás de la otra?
+
+```{r 32c, exercise=TRUE}
+ 
+```
+```{r 32c-hint}
+
+```
 
 ### Ejercicio 2.37 ###
 
 ¿De cuántas maneras se pueden sentar 4 niños y 5 niñas en una fi la, si se deben alternar unos y otras?
 
+```{r 37, exercise=TRUE}
+ 
+```
+```{r 37-hint}
+
+```
+
 ### Ejercicio 2.45 ###
 
 ¿Cuántas permutaciones distintas se pueden hacer con las letras de la palabra INFINITO?
 
+```{r 45, exercise=TRUE}
+ 
+```
+```{r 45-hint}
+
+```
 
 ## Probabilidades simples y conjuntas ##
 
@@ -182,41 +232,138 @@ c) ¿De cuántas maneras se pueden formar si, de las 6, 2 personas específi cas
 Basado en su experiencia, un agente bursátil considera que en las condiciones económicas actuales la probabilidad de que un cliente invierta en bonos libres de impuestos es 0.6, la de que invierta en fondos comunes de inversión es 0.3 y la de que invierta en ambos es 0.15. En esta ocasión encuentre la probabilidad de que un cliente invierta
 
 a) en bonos libres de impuestos o en fondos comunes de inversión;
+
+```{r 54a, exercise=TRUE}
  
+```
+```{r 54a-hint}
+
+```
 b) en ninguno de esos dos instrumentos
+
+```{r 54b, exercise=TRUE}
+ 
+```
+```{r 54b-hint}
+
+```
 
 ### Ejercicio 2.55 ###
 
 Si cada artículo codificado en un catálogo empieza con 3 letras distintas seguidas por 4 dígitos distintos de cero, calcule la probabilidad de seleccionar aleatoriamente uno de estos artículos codificados que tenga como primera letra una vocal y el último dígito sea par.
 
+```{r 55, exercise=TRUE}
+ 
+```
+```{r 55-hint}
+
+```
+
 ### Ejercicio 2.57 ###
 
 Si se elige al azar una letra del alfabeto inglés, encuentre la probabilidad de que la letra
 
- a) sea una vocal excepto y;
- b) esté listada en algún lugar antes de la letra j;
- c) esté listada en algún lugar después de la letra g. 
+a) sea una vocal excepto y;
+
+```{r 57a, exercise=TRUE}
+ 
+```
+```{r 57a-hint}
+
+```
+
+b) esté listada en algún lugar antes de la letra j;
+
+```{r 57b, exercise=TRUE}
+ 
+```
+```{r 57b-hint}
+
+```
+
+c) esté listada en algún lugar después de la letra g. 
+
+```{r 57c, exercise=TRUE}
+ 
+```
+```{r 57c-hint}
+
+```
 
 ### Ejercicio 2.58 ###
 
 Se lanza un par de dados. Calcule la probabilidad de obtener
- a) un total de 8;
- b) máximo un total de 5.
+
+a) un total de 8;
+
+```{r 58a, exercise=TRUE}
+ 
+```
+```{r 58a-hint}
+
+```
+
+b) máximo un total de 5.
+
+```{r 58b, exercise=TRUE}
+ 
+```
+```{r 58b-hint}
+
+```
 
 ### Ejercicio 2.60 ###
 
 Si se toman 3 libros al azar, de un librero que contiene 5 novelas, 3 libros de poemas y 1 diccionario, ¿cuál es la probabilidad de que…
 
- a) se seleccione el diccionario?
- b) se seleccionen 2 novelas y 1 libro de poemas?
+a) se seleccione el diccionario?
+
+```{r 60a, exercise=TRUE}
+ 
+```
+```{r 60a-hint}
+
+```
+
+b) se seleccionen 2 novelas y 1 libro de poemas?
+
+```{r 60b, exercise=TRUE}
+ 
+```
+```{r 60b-hint}
+
+```
 
 ### Ejercicio 2.61 ###
 
-En un grupo de 100 estudiantes graduados de preparatoria, 54 estudiaron matemáticas, 69 estudiaron historia y 35 cursaron matemáticas e historia. Si se selecciona al azar uno de estos estudiantes, calcule la probabilidad de que
+En un grupo de 100 estudiantes graduados de preparatoria, 54 estudiaron matemáticas, 69 estudiaron historia y 35 cursaron matemáticas e historia. Si se selecciona al azar uno de estos estudiantes, calcule la probabilidad de que:
 
- a) el estudiante haya cursado matemáticas o historia;
- b) el estudiante no haya llevado ninguna de estas materias;
- c) el estudiante haya cursado historia pero no matemáticas.
+a) el estudiante haya cursado matemáticas o historia;
+
+```{r 61a, exercise=TRUE}
+ 
+```
+```{r 61a-hint}
+
+```
+
+b) el estudiante no haya llevado ninguna de estas materias;
+
+```{r 61b, exercise=TRUE}
+ 
+```
+```{r 61b-hint}
+
+```
+
+c) el estudiante haya cursado historia pero no matemáticas.
+
+```{r 61c, exercise=TRUE}
+ 
+```
+```{r 61c-hint}
+
+```
 
 ### Ejercicio 2.63 ###
 
@@ -228,15 +375,52 @@ A continuación se listan los porcentajes, proporcionados por Consumer Digest (j
       Otra habitación: 0.28
      
 a) ¿Cuál es la probabilidad de que una PC esté en un dormitorio?
+
+```{r 63a, exercise=TRUE}
+ 
+```
+```{r 63a-hint}
+
+```
 b) ¿Cuál es la probabilidad de que no esté en un dormitorio?
+
+```{r 63b, exercise=TRUE}
+ 
+```
+```{r 63b-hint}
+
+```
+
 c) Suponga que de entre las casas que tienen una PC se selecciona una al azar,
+
+```{r 63c, exercise=TRUE}
+ 
+```
+```{r 63c-hint}
+
+```
 
 ### Ejercicio 2.64 ###
 
 Existe interés por la vida de un componente electrónico. Suponga que se sabe que la probabilidad de que el componente funcione más de 6000 horas es 0.42. Suponga, además, que la probabilidad de que el componente no dure más de 4000 horas es 0.04.
 
  a) ¿Cuál es la probabilidad de que la vida del componente sea menor o igual a 6000 horas?
+ 
+```{r 64a, exercise=TRUE}
+ 
+```
+```{r 64a-hint}
+
+```
+ 
  b) ¿Cuál es la probabilidad de que la vida del componente sea mayor que 4000 horas?
+ 
+```{r 64b, exercise=TRUE}
+ 
+```
+```{r 64b-hint}
+
+```
 
 ## Probabilidad condicional, independencia y regla del producto ##
 
@@ -244,6 +428,13 @@ Existe interés por la vida de un componente electrónico. Suponga que se sabe q
 
 Un grupo de estudiantes de física avanzada se compone de 10 alumnos de primer año, 30 del último
 año y 10 graduados. Las calificaciones finales muestran que 3 estudiantes de primer año, 10 del último año y 5 de los graduados obtuvieron 10 en el curso. Si se elige un estudiante al azar de este grupo y se descubre que es uno de los que obtuvieron 10 de calificación, ¿cuál es la probabilidad de que sea un estudiante de último año?
+
+```{r 74, exercise=TRUE}
+ 
+```
+```{r 74-hint}
+
+```
 
 ### Ejercicio 2.75 ###
 
