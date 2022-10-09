@@ -1,0 +1,757 @@
+---
+title: "Conceptos básicos de probabilidad"
+author: Departamento de matemáticas </br> Pontificia Unversidad Javeriana </br> Sede Cali
+output: 
+  learnr::tutorial:
+    css: css/learnr_metadocencia.css
+    progressive: false
+    language:
+      es: tutorial_es.json
+description: "Conceptos básicos de probabilidad" 
+runtime: shiny_prerendered
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE,
+                 exercise.warn_invisible = FALSE)
+```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("images/tutorial_encabezado.jpg")
+```
+
+## Espacio muestral y eventos
+
+### Ejercicio 2.14
+
+Si S = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} y A = {0, 2, 4, 6, 8}, B = {1, 3,
+5, 7, 9}, C = {2, 3, 4, 5} y D = {1, 6, 7}, liste los elementos de los
+conjuntos que corresponden a los siguientes eventos:
+
+```{r 14}
+quiz(
+  question("A ∪ B",
+    answer("{0,1,2,3,4,5,6,7,8,9}", correct = TRUE),
+    answer("{0,3,4,5,6,7,8}"),
+    answer("{2,3,5,7,8,9}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A ∩ B",
+    answer("{0,3,4,5,6,7,8}"),
+    answer("{1,2,7,8}"),
+    answer("{∅}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("C'",
+    answer("{2,4,6}"),
+    answer("{0,1,6,7,9}"),
+    answer("{0,1,6,7,8,9}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("(C' ∩ D) union B",
+    answer("{1,3,5,6,7,9}", correct = TRUE),
+    answer("{∅}"),
+    answer("{3,5,6,7,8}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("(S ∩ C)'",
+    answer("{0,3}"),
+    answer("{0,2,4,9}"),
+    answer("{0,1,6,7,8,9}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A ∩ C ∩ D'",
+    answer("{4,5,6}"),
+    answer("{2,4}", correct = TRUE ),
+    answer("{3,5,6,7,8}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo")
+)
+```
+
+### Ejercicio 2.15
+
+Considere el espacio muestral S = {cobre, sodio, nitrógeno, potasio,
+uranio, oxígeno, cinc} y los eventos:. <br> \* A = {cobre, sodio, cinc}
+<br> \* B = {sodio, nitrógeno, potasio} <br> \* C = {oxígeno}
+
+```{r 15}
+quiz(
+  question("A´",
+    answer("{sodio}"),
+    answer("{nitrogeno, potasio, uranio, oxigeno}", correct = TRUE),
+    answer("{potasio, uranio, oxigeno}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A ∪ C",
+    answer("{sodio, cobre, cinc, potasio}"),
+    answer("{∅}"),
+    answer("{cobre, sodio, cinc, potasio, oxigeno}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A ∩ B′",
+    answer("{∅}"),
+    answer("{cobre, sodio, nitrogeno, potasio, uranio, cinc}", correct = TRUE),
+    answer("{oxigeno, cinc, cobre, sodio}"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("B′ ∩ C′",
+    answer("{cobre, uranio, cinc}", correct = TRUE),
+    answer("{uranio, oxigeno, cinc}"),
+    answer("Ninguna de las anteriores"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A ∩ B ∩ C",
+    answer("{cinc, sodio, potasio}"),
+    answer("{∅}", correct = TRUE),
+    answer("polonio, oxigeno, uranio"),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  question("A′ ∪ B′",
+    answer("{oxygen, cinc}"),
+    answer("{potasio, cobre, nitrogeno, sodio}"),
+    answer("{oxigeno}", correct = TRUE),
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo")
+)
+```
+
+## Conteo de puntos muestrales
+
+Nota: tendremos que la notación para combinatorias será nCk, o lo que es
+lo mismo n!/(n-k)!k!.
+
+### Ejercicio 2.21
+
+A los participantes de una convención se les ofrecen seis recorridos,
+cada uno de tres días, a sitios de interés. ¿De cuántas maneras se puede
+acomodar una persona para que vaya a uno de los recorridos planeados por
+la convención?
+
+```{r 21, exercise=TRUE}
+ 
+```
+
+```{r 21-solution}
+6*3
+```
+
+### Ejercicio 2.22
+
+En un estudio médico los pacientes se clasifican en 8 formas de acuerdo
+con su tipo sanguíneo: AB+, AB--, A+, A--, B+, B--, O+ u O--; y también
+de acuerdo con su presión sanguínea: baja, normal o alta. Encuentre el
+número de formas en las que se puede clasificar a un paciente.
+
+```{r 22, exercise=TRUE}
+ 
+```
+
+```{r 22-solution}
+8*3
+```
+
+### Ejercicio 2.23
+
+Si un experimento consiste en lanzar un dado y después extraer una letra
+al azar del alfabeto inglés, ¿cuántos puntos habrá en el espacio
+muestral?
+
+```{r 23, exercise=TRUE}
+ 
+```
+
+```{r 23-solution}
+6*26
+```
+
+### Ejercicio 2.25
+
+Cierta marca de calzado existe en 5 diferentes estilos y cada estilo
+está disponible en 4 colores distintos. Si la tienda deseara mostrar la
+cantidad de pares de zapatos que incluya todos los diversos estilos y
+colores, ¿cuántos pares diferentes tendría que mostrar?
+
+```{r 25, exercise=TRUE}
+ 
+```
+
+```{r 25-solution}
+5*4
+```
+
+### Ejercicio 2.30
+
+¿De cuántas formas distintas se puede responder una prueba de
+falso-verdadero que consta de 9 preguntas?
+
+```{r 30, exercise=TRUE}
+ 
+```
+
+```{r 30-solution}
+2*2*2*2*2*2*2*2*2*2 = 2^9
+```
+
+### Ejercicio 2.32
+
+a)  ¿De cuántas maneras se pueden formar 6 personas para abordar un
+    autobús?
+
+```{r 32a, exercise=TRUE}
+ 
+```
+
+```{r 32a-solution}
+# 6|
+factorial(6)
+```
+
+b)  ¿Cuántas maneras son posibles si, de las 6, 3 personas específicas
+    insisten en formarse una después de la otra?
+
+```{r 32b, exercise=TRUE}
+ 
+```
+
+```{r 32b-solution}
+3*2*1*3! = 3*2*1*3*2*1
+```
+
+### Ejercicio 2.37
+
+¿De cuántas maneras se pueden sentar 4 niños y 5 niñas en una fila, si
+se deben alternar unos y otras?
+
+```{r 37, exercise=TRUE}
+ 
+```
+
+```{r 37-solution}
+5*4*4*3*3*2*2*1*1
+```
+
+### Ejercicio 2.45
+
+¿Cuántas permutaciones distintas se pueden hacer con las letras de la
+palabra INFINITO?
+
+```{r 45, exercise=TRUE}
+ 
+```
+
+```{r 45-solution}
+# 8!
+factorial(8)
+```
+
+## Tablas de frecuencias
+
+PENDIENTE
+
+## Probabilidades simples y conjuntas
+
+### Ejercicio 2.54
+
+Basado en su experiencia, un agente bursátil considera que en las
+condiciones económicas actuales la probabilidad de que un cliente
+invierta en bonos libres de impuestos es 0.6, la de que invierta en
+fondos comunes de inversión es 0.3 y la de que invierta en ambos es
+0.15. En esta ocasión encuentre la probabilidad de que un cliente
+invierta
+
+a)  en bonos libres de impuestos o en fondos comunes de inversión;
+
+```{r 54a, exercise=TRUE}
+ 
+```
+
+```{r 54a-solution}
+Sean los eventos:
+B: el cliente invierte en bonos libres de impuestos.
+F: el cliente invierte en fondos comunes de inversión.
+
+P(B) = 0.6, P(F) = 0.3, P(B ∩ F) = 0.15
+
+Asi se tiene:
+R/ P(B ∪ F) = P(B) + P(F) − P(B ∩ F) = 0.6 + 0.3 − 0.15 = 0.75.
+
+```
+
+b)  en ninguno de esos dos instrumentos
+
+```{r 54b, exercise=TRUE}
+ 
+```
+
+```{r 54b-solution}
+Sean los eventos:
+B: el cliente invierte en bonos libres de impuestos.
+F: el cliente invierte en fondos comunes de inversión.
+
+P(B) = 0.6, P(F) = 0.3, P(B ∩ F) = 0.15
+
+Asi se tiene:
+R/ P(B′ ∩ M′) = 1 − P(B ∪ M) = 1 − 0.75 = 0.25.
+```
+
+### Ejercicio 2.55
+
+Si cada artículo codificado en un catálogo empieza con 3 letras distintas (alfabeto inglés) seguidas por 4 dígitos distintos de cero, calcule la probabilidad de seleccionar aleatoriamente uno de estos artículos codificados que tenga como primera letra una vocal y el último dígito sea par.
+
+```{r 55, exercise=TRUE}
+ 
+```
+
+```{r 55-solution}
+Casos posibles: 5*25*24*8*7*6*4
+Casos totales: 26*25*24*9*8*7*6
+```
+
+### Ejercicio 2.57
+
+Si se elige al azar una letra del alfabeto inglés, encuentre la probabilidad de que la letra
+
+a)  sea una vocal excepto y;
+
+```{r 57a, exercise=TRUE}
+
+```
+
+```{r 57a-solution}
+Como 5 de las 26 letras son vocales, se tiene 5/26
+```
+
+b)  esté listada en algún lugar antes de la letra j;
+
+```{r 57b, exercise=TRUE}
+ 
+```
+
+```{r 57b-solution}
+Se tiene que 9 letras preceden a la j, así 9/26
+```
+
+c)  esté listada en algún lugar después de la letra g.
+
+```{r 57c, exercise=TRUE}
+ 
+```
+
+```{r 57c-solution}
+Se tiene que 19 letras suceden a la g, así 19/26
+```
+
+### Ejercicio 2.58
+
+Se lanza un par de dados. Calcule la probabilidad de obtener:
+
+::: {#filter-hint}
+**Pista:** Espacio muestral: <br> {1,1}, {1,2}, {1,3}, {1,4}, {1,5},
+{1,6}, <br> {2,1}, {2,2}, {2,3}, {2,4}, {2,5}, {2,6}, <br> {3,1}, {3,2},
+{3,3}, {3,4}, {3,5}, {3,6}, <br> {4,1}, {4,2}, {4,3}, {4,4}, {4,5},
+{4,6}, <br> {5,1}, {5,2}, {5,3}, {5,4}, {5,5}, {5,6}, <br> {6,1}, {6,2},
+{6,3}, {6,4}, {6,5}, {6,6} <br> n = 36
+:::
+
+a)  un total de 8;
+
+```{r 58a, exercise=TRUE}
+ 
+```
+
+```{r 58a-solution}
+5/36
+```
+
+b)  máximo un total de 5.
+
+```{r 58b, exercise=TRUE}
+ 
+```
+
+```{r 58b-solution}
+10/36
+```
+
+### Ejercicio 2.60
+
+Si se toman 3 libros al azar, de un librero que contiene 5 novelas, 3 libros de poemas y 1 diccionario, ¿cuál es la probabilidad de que...
+
+a)  se seleccione el diccionario?
+
+```{r 60a, exercise=TRUE}
+
+```
+
+```{r 60a-solution}
+(1C1 * 8C2) / 9C3 = (choose(1, 1) * choose(8,2)) / choose(9, 3) = 0.3333333
+```
+
+b)  se seleccionen 2 novelas y 1 libro de poemas?
+
+```{r 60b, exercise=TRUE}
+ 
+```
+
+```{r 60b-solution}
+(5C2 * 3C1) / 9C3 = (choose(5, 2) * choose(3, 1)) / choose(9, 3) = 0.3571429
+```
+
+### Ejercicio 2.61
+
+En un grupo de 100 estudiantes graduados de preparatoria, 54 estudiaron matemáticas, 69 estudiaron historia y 35 cursaron matemáticas e historia. Si se selecciona al azar uno de estos estudiantes, calcule la probabilidad de que:
+
+a)  el estudiante haya cursado matemáticas o historia;
+
+```{r 61a, exercise=TRUE}
+ 
+```
+
+```{r 61a-solution}
+Sean los eventos:
+M: el estudiante estudia matemática
+H: el estudiante estudia historia
+
+P(M) = 54/100, P(H) = 69/100, P(M ∩ H) = 35/100
+
+Asi se tiene:
+R/ P(M ∪ H) = P(M) + P(H) − P(M ∩ H) = 54/100 + 69/100 - 35/100 = 0.88
+```
+
+b)  el estudiante no haya llevado ninguna de estas materias;
+
+```{r 61b, exercise=TRUE}
+ 
+```
+
+```{r 61b-solution}
+Sean los eventos:
+M: el estudiante estudia matemática
+H: el estudiante estudia historia
+
+P(M) = 54/100, P(H) = 69/100, P(M ∩ H) = 35/100
+
+Asi se tiene:
+R/ P(M´ ∩ H´) = 1 - P(M ∪ H) = 1 - 0.88 = 0.12
+```
+
+c)  el estudiante haya cursado historia pero no matemáticas.
+
+```{r 61c, exercise=TRUE}
+ 
+```
+
+```{r 61c-solution}
+Sean los eventos:
+M: el estudiante estudia matemática
+H: el estudiante estudia historia
+
+P(M) = 54/100, P(H) = 69/100, P(M ∩ H) = 35/100
+
+Asi se tiene:
+R/ P(H ∩ M´) = 69/100 - 35/100 = 0.34
+```
+
+### Ejercicio 2.63
+
+A continuación se listan los porcentajes, proporcionados por Consumer Digest (julio/agosto de 1996), de las probables ubicaciones de las PC en una casa:
+
+| Ubicación             | Porcentaje |
+|-----------------------|:----------:|
+| Dormitorio de adultos |    0.03    |
+| Dormitorio de niños   |    0.15    |
+| Otro dormitorio       |    0.14    |
+| Oficina o estudio     |    0.40    |
+| Otra habitación       |    0.28    |
+
+a)  ¿Cuál es la probabilidad de que una PC esté en un dormitorio?
+
+```{r 63a, exercise=TRUE}
+ 
+```
+
+```{r 63a-solution}
+0.03 + 0.15 + 0.14 = 0.32
+```
+
+b)  ¿Cuál es la probabilidad de que no esté en un dormitorio?
+
+```{r 63b, exercise=TRUE}
+ 
+```
+
+```{r 63b-solution}
+1 - 0.32 = 0.68
+```
+
+c)  Suponga que de entre las casas que tienen una PC se selecciona una
+    al azar, ¿en qué habitación esperaría encontrar una PC?
+
+```{r 63c, exercise=TRUE}
+ 
+```
+
+```{r 63c-solution}
+Oficina o estudio
+```
+
+### Ejercicio 2.64
+
+Existe interés por la vida de un componente electrónico. Suponga que se
+sabe que la probabilidad de que el componente funcione más de 6000 horas
+es 0.42. Suponga, además, que la probabilidad de que el componente no
+dure más de 4000 horas es 0.04.
+
+a)  ¿Cuál es la probabilidad de que la vida del componente sea menor o
+    igual a 6000 horas?
+
+```{r 64a, exercise=TRUE}
+ 
+```
+
+```{r 64a-solution}
+1-0.42
+```
+
+b)  ¿Cuál es la probabilidad de que la vida del componente sea mayor que
+    4000 horas?
+
+```{r 64b, exercise=TRUE}
+ 
+```
+
+```{r 64b-solution}
+1-0.04
+```
+
+## Probabilidad condicional, independencia y regla del producto
+
+### Ejercicio 2.74
+
+Un grupo de estudiantes de física avanzada se compone de 10 alumnos de
+primer año, 30 del último año y 10 graduados. Las calificaciones finales
+muestran que 3 estudiantes de primer año, 10 del último año y 5 de los
+graduados obtuvieron 10 en el curso. Si se elige un estudiante al azar
+de este grupo y se descubre que es uno de los que obtuvieron 10 de
+calificación, ¿cuál es la probabilidad de que sea un estudiante de
+último año?
+
+```{r 74, exercise=TRUE}
+ 
+```
+
+```{r 74-solution}
+Sean los eventos:
+U: el estudiante es de ultimo año
+D: el estudiante obtuvo 10 en el curso.
+
+R/ P(U | D) = P(U ∩ D) / P(D) = 0.2/0.36 = 0.5555
+```
+
+### Ejercicio 2.75
+
+La siguiente es una clasificación, según el género y el nivel de
+escolaridad, de una muestra aleatoria de 200 adultos.
+
+| Escolaridad | Hombre | Mujer |
+|-------------|:------:|:-----:|
+| Primaria    | 38     | 45    |
+| Secundaria  | 28     | 50    |
+| Universidad | 22     | 17    |
+
+Si se elige una persona al azar de este grupo, ¿cuál es la probabilidad
+de que:
+
+a) la persona sea hombre, dado que su escolaridad es de secundaria?
+
+```{r 75a, exercise=TRUE}
+ 
+```
+
+```{r 75a-solution}
+P(Secundaria) = 78/200
+
+R/ P(Hombre | Secundaria) = P(Hombre ∩ Secundaria) / P(Secundaria) = (28/200) / (78/200) = 0.3589
+```
+
+b) la persona no tenga un grado universitario, dado que es mujer?
+
+```{r 75b, exercise=TRUE}
+ 
+```
+
+```{r 75b-solution}
+P(Mujer) = 112/200
+
+R/ P(Universidad´ | Mujer) = P(Universidad´ ∩ Mujer) / P(Mujer) = (95/200) / (112/200) = 0.8482
+```
+
+### Ejercicio 2.78
+
+Un fabricante de una vacuna para la gripe está interesado en determinar
+la calidad de su suero. Con ese fin tres departamentos diferentes
+procesan los lotes de suero y tienen tasas de rechazo de 0.10, 0.08 y
+0.12, respectivamente. Las inspecciones de los tres departamentos son
+secuenciales e independientes.
+
+a) ¿Cuál es la probabilidad de que un lote de suero sobreviva a la
+    primera inspección departamental pero sea rechazado por el segundo
+    departamento?
+
+```{r 78a, exercise=TRUE}
+
+```
+
+```{r 78a-solution}
+0.9*0.08
+```
+
+b)  ¿Cuál es la probabilidad de que un lote de suero sea rechazado por
+    el tercer departamento?
+    
+```{r 78b, exercise=TRUE}
+ 
+```
+
+```{r 78b-solution}
+0.9*0.92*0.12
+```
+
+### Ejercicio 2.80
+
+La probabilidad de que cuando se tenga que llenar el tanque de gasolina
+de un automóvil también se necesite cambiarle el aceite es 0.25, la
+probabilidad de que también se le tenga que cambiar el filtro de aceite
+es 0.40, y la probabilidad de que se necesite cambiarle el aceite y el
+filtro es 0.14.
+
+a) Si se le tiene que cambiar el aceite, ¿cuál es la probabilidad de
+    que también se necesite cambiarle el filtro?
+    
+```{r 80a, exercise=TRUE}
+
+```
+
+```{r 80a-solution}
+Sean los eventos:
+A: se necesita cambiar el aceite del vehiculo.
+F: se necesita cambiar el filtro de aceite del vehiculo.
+
+P(A) = 0.25, P(F) = 0.40, P(A ∩ F) = 0.14
+
+R/ P(F | A) = P(F ∩ A) / P(A) = 0.14/0.25
+```
+
+b)  Si se le tiene que cambiar el filtro de aceite, ¿cuál es la
+    probabilidad de que también se le tenga que cambiar el aceite?
+    
+```{r 80b, exercise=TRUE}
+ 
+```
+
+```{r 80b-solution}
+Sean los eventos:
+A: se necesita cambiar el aceite del vehiculo.
+F: se necesita cambiar el filtro de aceite del vehiculo.
+
+P(A) = 0.25, P(F) = 0.40, P(A ∩ F) = 0.14
+
+R/ P(A | F) = P(A ∩ F) / P(F) = 0.14/0.40
+```
+
+### Ejercicio 2.81
+
+La probabilidad de que un hombre casado vea cierto programa de
+televisión es 0.4 y la probabilidad de que lo vea una mujer casada es
+0.5. La probabilidad de que un hombre vea el programa, dado que su
+esposa lo ve, es 0.7. Calcule la probabilidad de que:
+
+a) una pareja casada vea el programa.
+
+```{r 81a, exercise=TRUE}
+
+```
+
+```{r 81a-solution}
+Sean los eventos:
+H: un hombre casado ve cierto programa.
+M: una mujer casa ve cierto programa.
+
+R/ P(H ∩ M) = 0.5*0.7
+```
+
+b) una esposa vea el programa dado que su esposo lo ve.
+
+```{r 81b, exercise=TRUE}
+ 
+```
+
+```{r 81b-solution}
+Sean los eventos:
+H: un hombre casado ve cierto programa.
+M: una mujer casa ve cierto programa.
+
+R/ P(M | H) = P(M ∩ H) / P(H) = (0.5*0.7) / 0.4
+```
+
+c) al menos uno de los miembros de la pareja casada vea el programa.
+
+```{r 81c, exercise=TRUE}
+ 
+```
+
+```{r 81c-solution}
+Sean los eventos:
+H: un hombre casado ve cierto programa.
+M: una mujer casa ve cierto programa.
+
+R/ P(M ∪ H) = P(M) + P(H) - P(M ∩ H) = 0.5 + 0.4 - 0.35
+```
+
+### Ejercicio 2.95
+
+En cierta región del país se sabe por experiencia que la probabilidad de
+seleccionar un adulto mayor de 40 años de edad con cáncer es 0.05. Si la
+probabilidad de que un doctor diagnostique de forma correcta que una
+persona con cáncer tiene la enfermedad es 0.78, y la probabilidad de que
+diagnostique de forma incorrecta que una persona sin cáncer tiene la
+enfermedad es 0.06, ¿cuál es la probabilidad de que a un adulto mayor de
+40 años se le diagnostique cáncer?
+
+```{r 95, exercise=TRUE}
+
+```
+
+```{r 95-solution}
+Sean los eventos:
+C: un adulto seleccionado tiene cancer.
+D: el adulto es diagnosticado con cancer.
+
+P(C) = 0.05, P(D | C) = 0.78, P(C′) = 0.95, P(D | C′) = 0.06
+
+R/ P(D) = P(C ∩ D) + P(C′ ∩ D) = 0.05*0.78 + 0.95*0.06 = 0.096
+```
+
+### Ejercicio 2.96
+
+La policía planea hacer respetar los límites de velocidad usando un
+sistema de radar en 4 diferentes puntos a las orillas de la ciudad. Las
+trampas de radar en cada uno de los sitios L1, L2, L3 y L4 operarán 40%,
+30 %, 20% y 30% del tiempo. Si una persona que excede el límite de
+velocidad cuando va a su trabajo tiene probabilidades de 0.2, 0.1, 0.5 y
+0.2, respectivamente, de pasar por esos lugares, ¿cuál es la
+probabilidad de que reciba una multa por conducir con exceso de
+velocidad?
+
+```{r 96, exercise=TRUE}
+ 
+```
+
+```{r 96-solution}
+0.4*0.2 + 0.3*0.1 + 0.2*0.5 + 0.3*0.2
+```
