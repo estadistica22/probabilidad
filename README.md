@@ -14,6 +14,7 @@ alojado en GitHub durante su etapa de elaboración.
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("estadistica22/probabilidad")
+install_github("estadistica22/probabilidad", force = TRUE, build = TRUE)
+learnr::run_tutorial(name = "probabilidad", package = "paquete2")
 ```
 
